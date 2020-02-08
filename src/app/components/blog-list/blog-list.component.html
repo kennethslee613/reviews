@@ -1,7 +1,10 @@
-<div class="right">
-  <app-blog 
-    *ngFor="let blog of blogs;"
-    [blog]="blog"
-  >
-  </app-blog>
+<div>
+  <app-header></app-header>
+  <div class="content">
+    <app-blog 
+      *ngFor="let blog of blogs;"
+      [blog]="blog"
+    >
+    </app-blog>
+  </div>
 </div>

@@ -1,0 +1,41 @@
+.title {
+  color: #ffffff;
+  font-size: 18px;
+  /* font-weight: bold; */
+}
+
+.nav-item {
+  color: #ffffff;
+  font-size: 16px;
+  padding-right: 32px;
+  text-decoration: none;
+}
+
+.search {
+  font-size: 16px;
+  padding: 5px 8px 5px 8px;
+  border-radius: 3px;
+  border-style: solid;
+  border-color: #dddddd;
+  border-width: 0.5px;
+  width: 300px;
+}
+
+.header-left {
+  line-height: 30px;
+  vertical-align: bottom;
+  float: left;
+}
+
+.header-right {
+  line-height: 30px;
+  vertical-align: bottom;
+  float: right;
+}
+
+.logo {
+  width: 30px;
+  height: 30px;
+  vertical-align: top;
+  margin-right: 10px;
+}
