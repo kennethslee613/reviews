@@ -2,9 +2,9 @@
   <h3>{{ blog.title }}</h3>
   <p>{{ blog.summary }}</p>
   <div class="tags">
-    <a class="tag" *ngFor="let tag of blog.tags;">
+    <span class="tag" *ngFor="let tag of blog.tags;">
       {{ "#" + tag }}
-    </a>
+    </span>
   </div>
   <small>{{ blog.datetime }}</small>
 </div>
