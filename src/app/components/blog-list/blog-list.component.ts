@@ -14,40 +14,55 @@ export class BlogListComponent implements OnInit {
   ngOnInit() {
     this.blogs = [
       {
-        title: "Audio Technica Microphone",
-        summary: "Taking a look at Audio Technica's affordable microphone and how it performs in different settings.",
+        id: 0,
+        title: 'Audio Technica Microphone',
+        summary: 'Taking a look at Audio Technica\'s affordable microphone and how it performs in different settings.',
         datetime: new Date(),
-        tags: ["tech", "microphones"].sort()
+        tags: ['tech', 'microphones'].sort(),
+        content: `
+          <p>Omg this is something that I used to record some funny videos!</p>
+          <p>ok</p>
+        `
       },
       {
-        title: "Guitar Water Mug",
-        summary: "A simple mug that can be used to drink from.",
+        id: 1,
+        title: 'Guitar Water Mug',
+        summary: 'A simple mug that can be used to drink from.',
         datetime: new Date(),
-        tags: ["home"].sort()
+        tags: ['home'].sort(),
+        content: ''
       },
       {
-        title: "Samsung Galaxy S9",
-        summary: "Why I still have the Galaxy S9 even though it's not the latest phone out on the market.",
+        id: 2,
+        title: 'Samsung Galaxy S9',
+        summary: 'Why I still have the Galaxy S9 even though it\'s not the latest phone out on the market.',
         datetime: new Date(),
-        tags: ["tech", "phones", "samsung", "other", "extra", "random", "tags", "that", "okay"].sort()
+        tags: ['tech', 'phones', 'samsung', 'other', 'extra', 'random', 'tags', 'that', 'okay'].sort(),
+        content: ''
       },
       {
-        title: "Samsung Galaxy S9",
-        summary: "Why I still have the Galaxy S9 even though it's not the latest phone out on the market.",
+        id: 3,
+        title: 'Samsung Galaxy S9',
+        summary: 'Why I still have the Galaxy S9 even though it\'s not the latest phone out on the market.',
         datetime: new Date(),
-        tags: ["tech", "phones", "samsung"].sort()
+        tags: ['tech', 'phones', 'samsung'].sort(),
+        content: ''
       },
       {
-        title: "Samsung Galaxy S9",
-        summary: "Why I still have the Galaxy S9 even though it's not the latest phone out on the market.",
+        id: 4,
+        title: 'Samsung Galaxy S9',
+        summary: 'Why I still have the Galaxy S9 even though it\'s not the latest phone out on the market.',
         datetime: new Date(),
-        tags: ["tech", "phones", "samsung"].sort()
+        tags: ['tech', 'phones', 'samsung'].sort(),
+        content: ''
       },
       {
-        title: "Samsung Galaxy S9",
-        summary: "Why I still have the Galaxy S9 even though it's not the latest phone out on the market.",
+        id: 5,
+        title: 'Samsung Galaxy S9',
+        summary: 'Why I still have the Galaxy S9 even though it\'s not the latest phone out on the market.',
         datetime: new Date(),
-        tags: ["tech", "phones", "samsung"].sort()
+        tags: ['tech', 'phones', 'samsung'].sort(),
+        content: ''
       }
     ]
   }

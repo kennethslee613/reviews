@@ -32,11 +32,15 @@ small {
   top: 0px;
 }
 
-.content {
-  padding-top: 65px;
+.blog-list {
   padding-bottom: 15px;
-  padding-right: 10%;
   padding-left: 2%;
   float: right;
-  width: 48%;
+  width: 58%;
+}
+
+.content {
+  padding-top: 65px;
+  padding-left: 10%;
+  padding-right: 10%;
 }
