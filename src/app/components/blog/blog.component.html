@@ -1,4 +1,4 @@
-<div class="card">
+<div class="card" (click)="onBlogClick()">
   <h3>{{ blog.title }}</h3>
   <p>{{ blog.summary }}</p>
   <div class="tags">
@@ -6,5 +6,5 @@
       {{ "#" + tag }}
     </span>
   </div>
-  <small>{{ blog.datetime }}</small>
+  <small>{{ (blog.datetime | date: 'mediumDate') + ' at ' + (blog.datetime | date: 'shortTime') }}</small>
 </div>
