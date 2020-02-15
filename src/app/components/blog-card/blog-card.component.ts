@@ -2,11 +2,11 @@ import { Component, OnInit, Input, Output, EventEmitter } from '@angular/core';
 import { Blog } from 'src/app/models/Blog';
 
 @Component({
-  selector: 'app-blog',
-  templateUrl: './blog.component.html',
-  styleUrls: ['./blog.component.css']
+  selector: 'app-blog-card',
+  templateUrl: './blog-card.component.html',
+  styleUrls: ['./blog-card.component.css']
 })
-export class BlogComponent implements OnInit {
+export class BlogCardComponent implements OnInit {
   @Input() blog: Blog;
   @Output() idEvent: EventEmitter<number> = new EventEmitter();
 
