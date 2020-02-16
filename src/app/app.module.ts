@@ -8,6 +8,7 @@ import { BlogCardComponent } from './components/blog-card/blog-card.component';
 import { HeaderComponent } from './components/header/header.component';
 import { BlogContentComponent } from './components/blog-content/blog-content.component';
 import { PageNotFoundComponent } from './components/page-not-found/page-not-found.component';
+import { BlogService } from './services/blog.service';
 
 @NgModule({
   declarations: [
@@ -22,7 +23,9 @@ import { PageNotFoundComponent } from './components/page-not-found/page-not-foun
     BrowserModule,
     AppRoutingModule
   ],
-  providers: [],
+  providers: [
+    BlogService
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
