@@ -1,5 +1,6 @@
 <div>
   <div class="blog-list">
+    <h3 class="error">{{ errorMessage }}</h3>
     <app-blog-card 
       *ngFor="let blog of blogs;"
       [blog]="blog"

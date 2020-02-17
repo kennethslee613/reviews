@@ -44,3 +44,8 @@ small {
   padding-left: 10%;
   padding-right: 10%;
 }
+
+.error {
+  text-align: center;
+  color: #cf1d1d;
+}

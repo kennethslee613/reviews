@@ -9,12 +9,15 @@ import { BlogService } from 'src/app/services/blog.service';
 })
 export class BlogListComponent implements OnInit {
   blogs: Blog[] = [];
+  errorMessage: string;
 
   constructor(private _blogService: BlogService) { }
 
   ngOnInit() {
     this._blogService.getBlogs().subscribe((data) => {
       this.blogs = data;
+    }, (error) => {
+      this.errorMessage = error;
     });
   }
 
