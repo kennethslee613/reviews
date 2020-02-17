@@ -9,7 +9,7 @@ import { catchError, retry } from 'rxjs/operators';
 })
 export class BlogService {
 
-  private _url: string = "/assets/data/blogs.jsn";
+  private _url: string = "/assets/data/blogs.json";
 
   constructor(private http: HttpClient) { }
 
