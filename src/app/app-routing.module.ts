@@ -7,20 +7,15 @@ import { PageNotFoundComponent } from './components/page-not-found/page-not-foun
 const routes: Routes = [
   {
     path: '',
-    children: [
-      {
-        path: '',
-        component: BlogListComponent
-      },
-      {
-        path: 'review/:id',
-        component: BlogContentComponent
-      },
-      {
-        path: '**',
-        component: PageNotFoundComponent
-      }
-    ]
+    component: BlogListComponent
+  },
+  {
+    path: 'review/:id',
+    component: BlogContentComponent
+  },
+  {
+    path: '**',
+    component: PageNotFoundComponent
   }
 ];
 

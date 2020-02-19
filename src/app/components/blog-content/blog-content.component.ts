@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { ActivatedRoute } from '@angular/router';
 
 @Component({
   selector: 'app-blog-content',
@@ -6,10 +7,13 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./blog-content.component.css']
 })
 export class BlogContentComponent implements OnInit {
+  reviewId: number;
 
-  constructor() { }
+  constructor(private route: ActivatedRoute) { }
 
   ngOnInit() {
+    console.log(this.route.snapshot);
+    this.reviewId = parseInt(this.route.snapshot.paramMap.get('id'));
   }
 
 }
