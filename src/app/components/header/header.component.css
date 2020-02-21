@@ -1,26 +1,42 @@
 header {
-  padding-top: 10px;
-  padding-bottom: 10px;
   padding-right: calc(10%);
   padding-left: calc(10%);
-  height: 30px;
+  height: 56px;
   background-color: #63a8ff;
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
 }
 
 .title {
   color: #ffffff;
   font-size: 18px;
-  /* font-weight: bold; */
 }
 
 .nav-item {
   color: #ffffff;
   font-size: 16px;
-  padding-right: 32px;
+  padding: 10px 16px 10px 16px;
+  margin: 4px;
+  border-radius: 3px;
   text-decoration: none;
 }
 
+.nav-item:hover {
+  background-color: #5a9ae7
+}
+
+.nav-item:focus {
+  background-color: #5a9ae7
+}
+
 .search {
+  margin-left: 20px;
+}
+
+.search > input {
   font-size: 16px;
   font-weight: normal;
   padding: 5px 8px 5px 8px;
@@ -31,16 +47,22 @@ header {
   width: 300px;
 }
 
+.search > input:focus {
+  border-color: #2072d6;
+}
+
 .header-left {
-  line-height: 30px;
-  vertical-align: bottom;
-  float: left;
+  justify-content: flex-start;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
 }
 
 .header-right {
-  line-height: 30px;
-  vertical-align: bottom;
-  float: right;
+  justify-content: flex-end;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
 }
 
 .logo {
