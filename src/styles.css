@@ -49,3 +49,7 @@ small {
   text-align: center;
   color: #cf1d1d;
 }
+
+.selectable:focus {
+  outline: none;
+}
