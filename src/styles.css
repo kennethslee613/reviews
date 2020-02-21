@@ -17,6 +17,11 @@ small {
   color: #777777;
 }
 
+a {
+  text-decoration: inherit;
+  color: inherit;
+}
+
 .sticky {
   position: fixed;
   width: calc(100% - 2 * (10%));

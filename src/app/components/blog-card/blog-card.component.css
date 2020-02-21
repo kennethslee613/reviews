@@ -1,19 +1,21 @@
 .card {
+  display: block;
   margin-top: 15px;
   margin-bottom: 15px;
-  padding-left: 10px;
-  padding-right: 10px;
-  padding-top: 15px;
-  padding-bottom: 15px;
+  padding: 15px 10px 15px 10px;
   border-radius: 4px;
   border: 0.5px;
   border-style: solid;
   border-color: #dddddd;
-  /* box-shadow: 0.5px 0.5px 0.5px 0.5px #cccccc; */
 }
 
 .card:hover {
   cursor: pointer;
+  background-color: #f8f8f8;
+}
+
+.card:focus {
+  background-color: #eaeaea;
 }
 
 .tags {
