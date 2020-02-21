@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { ActivatedRoute } from '@angular/router';
+import { ActivatedRoute, ParamMap } from '@angular/router';
 
 @Component({
   selector: 'app-blog-content',
@@ -12,8 +12,9 @@ export class BlogContentComponent implements OnInit {
   constructor(private route: ActivatedRoute) { }
 
   ngOnInit() {
-    console.log(this.route.snapshot);
-    this.reviewId = parseInt(this.route.snapshot.paramMap.get('id'));
+    this.route.paramMap.subscribe((param: ParamMap) => {
+      this.reviewId = parseInt(param.get('id'));
+    });
   }
 
 }
