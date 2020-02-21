@@ -1,3 +1,12 @@
+header {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-right: calc(10%);
+  padding-left: calc(10%);
+  height: 30px;
+  background-color: #63a8ff;
+}
+
 .title {
   color: #ffffff;
   font-size: 18px;
