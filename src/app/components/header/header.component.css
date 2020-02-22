@@ -10,7 +10,7 @@ header {
   flex-direction: row;
 }
 
-.title {
+#title {
   color: #ffffff;
   font-size: 18px;
 }
@@ -25,11 +25,12 @@ header {
 }
 
 .nav-item:hover {
-  background-color: #5a9ae7
+  background-color: #5a9ae7;
+  cursor: pointer;
 }
 
 .nav-item:focus {
-  background-color: #5a9ae7
+  background-color: #5a9ae7;
 }
 
 .search {
@@ -65,9 +66,13 @@ header {
   align-items: center;
 }
 
-.logo {
+#logo {
   width: 30px;
   height: 30px;
   vertical-align: top;
   margin-right: 10px;
+}
+
+#logo:hover {
+  cursor: pointer;
 }
