@@ -1,5 +1,5 @@
 import { Component, OnInit, Input } from '@angular/core';
-import { Blog } from 'src/app/models/Blog';
+import { BlogCard } from 'src/app/models/BlogCard';
 
 @Component({
   selector: 'app-blog-card',
@@ -7,7 +7,7 @@ import { Blog } from 'src/app/models/Blog';
   styleUrls: ['./blog-card.component.css']
 })
 export class BlogCardComponent implements OnInit {
-  @Input() blog: Blog;
+  @Input() blog: BlogCard;
 
   constructor() { }
 

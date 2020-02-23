@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { Blog } from 'src/app/models/Blog';
+import { BlogCard } from 'src/app/models/BlogCard';
 import { BlogService } from 'src/app/services/blog.service';
 
 @Component({
@@ -8,13 +8,13 @@ import { BlogService } from 'src/app/services/blog.service';
   styleUrls: ['./blog-list.component.css']
 })
 export class BlogListComponent implements OnInit {
-  blogs: Blog[] = [];
+  blogs: BlogCard[] = [];
   errorMessage: string;
 
   constructor(private _blogService: BlogService) { }
 
   ngOnInit() {
-    this._blogService.getBlogs().subscribe((data) => {
+    this._blogService.getBlogCards().subscribe((data) => {
       this.blogs = data;
     }, (error) => {
       this.errorMessage = error;
